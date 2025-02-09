@@ -1,0 +1,42 @@
+{
+	"schemaVersion": 1,
+	"id": "projectpink",
+	"version": "${version}",
+	"name": "ProjectPink",
+	"description": "A fabric port of ProjectRed!",
+	"authors": [
+		"TristanHDreemurr",
+		"cris8107"
+	],
+	"contact": {
+		"homepage": "https://github.com/TristanHDreemurr/ProjectRedFabric/wiki",
+		"sources": "https://github.com/TristanHDreemurr/ProjectRedFabric"
+	},
+	"license": "MIT",
+	"icon": "assets/projectpink/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.projectpink.ProjectPink"
+		],
+		"client": [
+			"com.projectpink.ProjectPinkClient"
+		],
+		"fabric-datagen": [
+			"com.projectpink.ProjectPinkDataGenerator"
+		]
+	},
+	"mixins": [
+		"projectpink.mixins.json",
+		{
+			"config": "projectpink.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}
