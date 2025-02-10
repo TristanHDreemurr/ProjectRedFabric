@@ -20,5 +20,8 @@ public class ProjectPink implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Hello Fabric world!");
+		ModItems.initialize();
+		LOGGER.info("Items initialized!");
+		LOGGER.error("Kill me now. Kill me in hellfire and brimstone. Please. Nothing will hurt more than coding in Java.");
 	}
 }
